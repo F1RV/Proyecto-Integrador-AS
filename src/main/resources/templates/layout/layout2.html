@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:fragment="head">
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link th:href="@{/css/styles_1.css}" rel="stylesheet" />
+        
+    </head>
+    <body>
+        
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">ResFamily</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!"></a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/login}">Ingresar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header class="masthead d-flex align-items-center" >
+            <div class="container px-4 px-lg-5 text-center" style="background-image:">
+                <h1 class="mb-1">ResFamily</h1>
+                <h3 class="mb-5"><em>Organizador de programas y talleres</em></h3>
+                
+                
+              
+      
+            </div>
+        </header>
+        
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/277248128_5044166298964724_2863583356902125000_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=Rw0rBwfyFiEAX_V2uJM&_nc_ht=scontent-lim1-1.xx&oh=00_AT-aMz-ZDq24Zd97mXNe7PTScVrkxC2hGkwzAO3r7PNw3w&oe=62D05817" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Universidad Peruana Unión - UPeU</h1>
+                    <p>La Universidad Peruana Unión (UPeU) es una universidad privada afiliada a la Iglesia Adventista del Séptimo Día, ubicada en la ciudad de Ñaña - Lima, Perú.</p>
+                    <a class="btn btn-dark" href="https://upeu.edu.pe" target="_blank">Descubre mas!</a>    
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-dark my-5 py-3 text-center">
+                <div class="card-body"><p class="text-white m-0">“Cuando un hombre no tiene sus ideas en orden, cuantas más tenga, mayor será su confusión”.</p></div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Taller de Yoga</h2>
+                            
+                            <p class="card-text">Está orientado a la realización de diversas posturas físicas, cuyo objetivo fundamental es lograr un completo estado de relajo y bienestar, además dichos ejercicios generan beneficios como serenidad física y mental.</p>
+                            <img src="https://static.mujerhoy.com/www/multimedia/202004/28/media/cortadas/posturas-de-yoga-para-adelgazar-guerrero-kFHG--739x552@MujerHoy.jpg"  alt="alt" width="250" height="150"/>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-dark btn-sm" href="#!">¡Animate!</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Taller de informática</h2>
+                            <p class="card-text">Pretende introducir a las personas interesadas en el fascinante universo de la informática. De forma divertida y práctica, irán adquiriendo habilidad y experiencia en el uso del ordenador y se familiarizarán con los programas que más se adecuan.</p>
+                            <img src="https://elucabista.com/wp-content/uploads/2021/04/Taller-Ingenieria-Informatica-Mundo-UCAB-paginas-Web-3-1280x640.jpg"  alt="alt" width="250" height="150"/>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-dark btn-sm" href="#!">¡Animate!</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Taller de manualidades </h2>
+                            <p class="card-text">Son muy prácticos para aquellos que disfrutan invirtiendo su tiempo en pintar, recortar y colorear y hay muchas personas a las cuales esto les puede resultar hasta relajante. Si eres uno de estos y buscas algún curso de manualidades para adultos que te resulte interesante.</p>
+                            <img src="https://static.mujerhoy.com/www/multimedia/202004/28/media/cortadas/posturas-de-yoga-para-adelgazar-guerrero-kFHG--739x552@MujerHoy.jpg"  alt="alt" width="250" height="150"/>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-dark btn-sm" href="#!">¡Animate!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h2 class="mb-5">Nuestro equipo de trabajo</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial-item mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="https://i.postimg.cc/PJnFG1jq/foto.jpg" alt="...">
+                            <h5>Nikolai Cauper</h5>
+                            <p class="font-weight-light mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial-item mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="https://i.postimg.cc/x8NxCx63/Whats-App-Image-2022-07-12-at-10-38-23-AM.jpg" alt="...">
+                            <h5>Divaldo Medina</h5>
+                            <p class="font-weight-light mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial-item mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="https://i.postimg.cc/057bmMVJ/169534761-1115169912326857-7333139726772915140-n.jpg" alt="...">
+                            <h5>Ivan Vargas</h5>
+                            <p class="font-weight-light mb-0"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial-item mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="https://i.postimg.cc/13qhd6b9/image00001-1.jpg" alt="...">
+                            <h5>Rolando Rojas</h5>
+                            <p class="font-weight-light mb-0"></p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="text-white text-center" style="margin-top: auto;">
+  <!-- Grid container -->
+
+  
+  
+
+  
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-dark" style="background-color: #003366; width: 100">
+    <a style="float: left;">Copyright © UPeU 2022. Todos los derechos son reservados — Implementado por:</a>
+    <a href="https://upeu.edu.pe/" style="text-decoration: none; color: #eec20a; float: left;">UpeU</a>
+    <a href="https://web.facebook.com/UPeUOficial/"><img src="https://dolarpagano.com/img/Facebook.svg" style="height: 44px; width:44px"></a>
+    <a href="https://www.instagram.com/upeuoficial/"><img src="https://i.pinimg.com/originals/ca/51/6a/ca516ad32cd14832b56f26641a2a3ed6.png" style="height: 44px; width:44px"></a>
+    <a href="https://twitter.com/UPeUOficial"><img src="https://raw.githubusercontent.com/gist/hail2u/2884613/raw/0216962914635ef6e8e5389dd57a0e06f209fd72/twitter-bird.svg" style="height: 33px; width:33px"></a>
+    <a href="https://www.youtube.com/user/UPeruanaUnion"><img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-6-2.png" style="height: 33px; width:33x"></a>
+
+  </div>
+      
+  <!-- Copyright -->
+  
+</footer>
+        <!-- Bootstrap core JS-->
+        <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+        <!-- Core theme JS-->
+        <script th:src="@{/js/scripts.js}"></script>
+    </body>
+</html>
